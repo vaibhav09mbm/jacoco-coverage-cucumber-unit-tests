@@ -11,6 +11,9 @@
         
 	<properties>
 		<sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco-merged-test-coverage-report/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.projectKey>vaibhav09mbm_jacoco-coverage-cucumber-unit-tests</sonar.projectKey>
+                <sonar.organization>vaibhav09mbm</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
