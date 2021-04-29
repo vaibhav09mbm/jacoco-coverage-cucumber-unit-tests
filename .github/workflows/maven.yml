@@ -34,3 +34,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -P acceptance-tests
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+        # Artifact name
+         name: war
+        # A file, directory or wildcard pattern that describes what to upload
+         path: ~/target/*.war
+        # The desired behavior if no files are found using the provided path.
+         retention-days: 1 day
