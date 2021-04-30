@@ -48,5 +48,5 @@ jobs:
       - name: Build and push Docker images
       # You may pin to the exact commit or the version.
       # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
-        run: docker build -t hello
+        run: docker build . -t hello
         
